@@ -1,0 +1,16 @@
+/* BASIC simple CSS RESET */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* inehrit from Body */
+}
+
+/* Helper Rules */
+
+.hidden {
+  display: none;
+}

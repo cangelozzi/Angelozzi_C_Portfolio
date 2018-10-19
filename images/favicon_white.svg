@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.82 95.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff5c0d;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #ff14b3;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Logo_short">
+      <line id="l" class="cls-1" x1="76.63" y1="4" x2="37.15" y2="91.75"/>
+      <line id="l-2" data-name="l" class="cls-1" x1="43.48" y1="4" x2="4" y2="91.75"/>
+      <circle id="o" class="cls-2" cx="99.64" cy="54.96" r="15.18"/>
+    </g>
+  </g>
+</svg>

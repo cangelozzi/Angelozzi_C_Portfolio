@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.3 125.57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #292929;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #ff5c0d;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+
+      .cls-3 {
+        fill: #ff14b3;
+      }
+    </style>
+  </defs>
+  <title>Asset 6</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Logo_short_onBlack">
+      <rect id="bckgrd" class="cls-1" width="157.3" height="125.57"/>
+      <line id="l" class="cls-2" x1="96.37" y1="18.51" x2="56.89" y2="106.25"/>
+      <line id="l-2" data-name="l" class="cls-2" x1="63.22" y1="18.51" x2="23.74" y2="106.25"/>
+      <circle id="o" class="cls-3" cx="119.39" cy="69.47" r="15.18"/>
+    </g>
+  </g>
+</svg>
