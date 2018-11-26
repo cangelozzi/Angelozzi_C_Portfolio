@@ -5,6 +5,7 @@ html {
 }
 
 body {
-  // font-family: 'Montserrat', sans-serif; //! for bold headings
-  font-family: "Inconsolata", monospace;
+  font-family: $text;
+  color: $almostBlack;
+  background-color: $almostWhite;
 }
