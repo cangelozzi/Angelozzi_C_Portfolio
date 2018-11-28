@@ -3,4 +3,20 @@
   position: relative;
   top: 2.4rem;
   left: 14rem;
+  z-index: 9999;
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+      width: 19%;
+      top: 2.8rem;
+      left:  3rem;
+      position: fixed;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      width: 16%;
+      left:  8rem;
+    }
+
 }
