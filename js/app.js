@@ -7,7 +7,7 @@
     el: '#app',
 
     data: {
-
+      navigationList: ['SKILLS', 'WORKS', 'ABOUT', 'CONTACT'],
     }
 
   });
