@@ -15,6 +15,7 @@
       href="images/favicon_black.png"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js" type="text/javascript"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
@@ -25,41 +26,80 @@
   </head>
 
   <body>
-    <main id="app">
 
-      <!-- HEADER -->
-      <header id="mainHeader">
-        <h2 class="hidden">Hamburger Navigation</h2>
-        <!-- Hamburger Navigation -->
-        <div class="navigation">
-          <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-          <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-          </label>
-          <div class="navigation__background">&nbsp;</div>
-          <nav class="navigation__nav">
-            <h3 class="hidden">Main Navigation</h3>
-            <ul class="navigation__list">
-              <li class="navigation__item" v-for="item in navList">
-                <a href="#" class="navigation__link">{{ item }}</a>
+    <!-- HEADER -->
+    <header id="mainHeader">
+      <h2 class="hidden">Header</h2>
+      <!-- Hamburger Navigation -->
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <h3 class="hidden">Main Navigation</h3>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">SKILLS</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">WORKS</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">ABOUT</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">CONTACT</a>
+            </li>
+            <ul id="social">
+              <li><a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank" id="in"><i class="fab fa-linkedin-in"></i></a>
               </li>
-              <ul id="social">
-                <li><a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank" id="in"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="https://github.com/cangelozzi" target="_blank" id="gh"><i class="fab fa-github"></i></a>
-                </li>
-                <li><a href="https://www.behance.net/cangelozzif2db" target="_blank" id="be"><i class="fab fa-behance"></i></a>
-                </li>
-              </ul>
+              <li>
+                <a href="https://github.com/cangelozzi" target="_blank" id="gh"><i class="fab fa-github"></i></a>
+              </li>
+              <li><a href="https://www.behance.net/cangelozzif2db" target="_blank" id="be"><i class="fab fa-behance"></i></a>
               </li>
             </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- HEADER end -->
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER end -->
 
-    </main>
+    <!-- logo image -->
+    <img id="mainLogo" src="images/logo/logo.svg" alt="Camillo Main Logo">
+    
+    <!-- Lottie BodyMovin Animation -->
+    <div id="bm"></div>
+
+  <!-- MAIN CONTENT -->
+  <main id="app"></main>
+  <h2 class="hidden">Main Portfolio Content</h2>
+
+    <!-- HERO section -->
+    <section id="hero">
+
+      <!-- tagline -->
+      <div id="hero__tagline">
+        <p id="hero__tagline-lineOne">Hello<span>.</span></p>
+        <p id="hero__tagline-lineTwo">I am </p>
+        <p id="hero__tagline-lineThree">Camillo<span>.</span></p>
+      </div>
+
+      <!-- Typewriter effect presentation -->
+      <div id="presentation">
+        <h1>I am
+          <span class="txt-type" data-wait="2000" data-words='[" a curious Developer", " a passionate Designer", " an Explorer", " a Creator"]'></span>
+        </h1>
+      </div>
+      
+    </section>
+    <!-- HERO section end -->
+  
+  
+  </main>
 
     <script src="js/app.js"></script>
   </body>

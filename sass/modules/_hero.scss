@@ -1,12 +1,26 @@
-#font_test1 {
-  font-family: "Inconsolata", monospace; 
-  font-size: 2rem;
+#hero__tagline {
+  width: 80%;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 4.8rem;
+  font-weight: 600;
+  transform: translate(12%, 36%);
+
+  &-lineOne span { 
+    font-size: 5.4rem;
+    color: $lila_strong;
+  }
+
+  &-lineThree span { 
+    font-size: 5.4rem;
+    color: $orange_strong;
+  }
 }
 
-#font_test2 {
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 2rem;
+#presentation {
+  margin-top: 30rem;
+  text-align: center;
 }
+
 
 
 
