@@ -1,9 +1,15 @@
 #hero__tagline {
   width: 80%;
   font-family: 'Montserrat', sans-serif; 
-  font-size: 4.8rem;
+  font-size: 4rem;
   font-weight: 600;
-  transform: translate(12%, 36%);
+  transform: translate(12%, 10%);
+
+    // XS mobile size media queries at 375px
+    @media screen and (min-width: 375px) {
+      font-size: 4.8rem;
+      transform: translate(12%, 28%);
+    }
 
     // tablet size media queries at 760px
     @media screen and (min-width: 760px) {
@@ -41,8 +47,21 @@
 }
 
 #presentation {
-  margin-top: 30rem;
+  margin-top: 20rem;
   text-align: center;
+
+  h1 { 
+    visibility: hidden; 
+  
+    span {
+      visibility: visible;
+    }
+  }
+
+    // XS mobile size media queries at 375px
+    @media screen and (min-width: 375px) {
+      margin-top: 32rem;
+    }
 
     // tablet size media queries at 760px
     @media screen and (min-width: 760px) {

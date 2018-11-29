@@ -1,0 +1,78 @@
+#skills {
+  position: relative;
+  top: 10rem;
+  padding: 4rem;
+  margin-bottom: 10rem;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 5.4rem;
+    font-family: $headings;
+    margin-bottom: 9rem;
+    margin-left: 3rem;
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+      font-size: 6.4rem;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      margin-top: 9.1rem;
+      font-size: 9.1rem;
+    }
+
+    span {
+      color: $purple;
+    }
+
+  }
+
+}
+
+.svg-inline--fa {
+  margin: 0 auto;
+}
+
+.skill {
+  box-sizing: border-box;
+  padding: 4rem 2rem;
+
+  &:hover { background-color: orange; }
+
+  svg {
+    font-size: 6rem;
+    display: block;
+    margin-bottom: 8rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: $headings;
+  }
+
+  &__desc {
+    line-height: 3rem;
+    font-size: 1.8rem;
+  }
+
+}
+
+#mySkills {
+  display: grid;
+  grid-gap: 8rem;
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
