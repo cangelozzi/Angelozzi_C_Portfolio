@@ -48,7 +48,7 @@
           <h3 class="hidden">Main Navigation</h3>
           <ul class="navigation__list">
             <li class="navigation__item" v-for="item in navigationList">
-              <a href="#" class="navigation__link">{{ item }}</a>
+              <a :href="'#'+item" class="navigation__link">{{ item }}</a>
             </li>
             <ul id="social">
               <li><a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank" id="in"><i class="fab fa-linkedin-in"></i></a>
@@ -67,9 +67,9 @@
     <!-- HEADER end -->
 
     <!-- logo image -->
-    <img id="mainLogo" src="images/logo/logo.svg" alt="Camillo Main Logo">
+    <a href="#"><img id="mainLogo" src="images/logo/logo.svg" alt="Camillo Main Logo"></a>
 
-    <!-- HERO section -->
+    <!-- HERO -->
     <section id="hero"> 
 
       <!-- tagline -->
@@ -81,13 +81,30 @@
 
       <!-- Typewriter effect presentation -->
       <div id="presentation">
-        <h1>I am
-          <span class="txt-type" data-wait="2000" data-words='[" a curious Developer", " a passionate Designer", " an Explorer", " a Creator"]'></span>
+        <h1>_
+          <span class="txt-type" data-wait="2000" data-words='["I am a curious Developer", "I am a passionate Designer", "I am an Explorer", "I am a Creator"]'></span>
         </h1>
       </div>
       
     </section>
-    <!-- HERO section end -->
+    <!-- HERO end -->
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills<span>.</span></h2>
+
+        <div id="mySkills">
+          <div class="skill" v-for="skill in skills">
+            <i :class="skill.icon"></i>
+          
+            <h3 class="skill__title">{{ skill.title }}</h3>
+            <p class="skill__desc">{{ skill.desc }}</p>
+          </div>
+        </div>
+
+    </section>
+    <!-- SKILLS end -->
   
   
   </main>

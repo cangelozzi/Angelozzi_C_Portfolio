@@ -7,7 +7,61 @@
     el: '#app',
 
     data: {
-      navigationList: ['SKILLS', 'WORKS', 'ABOUT', 'CONTACT'],
+      navigationList: ['skills', 'works', 'about', 'contact'],
+
+      skills: {
+
+        webDevelopment: {
+          title: 'Web Development',
+          desc: 'Experience in Frontend and Backend web development with HTML5 / CSS3, Javascript, NodeJS, VueJS, PHP/MySQL and Laravel.',
+          icon: 'fas fa-terminal'
+        },
+
+        webDesign: {
+          title: 'Web Design',
+          desc: 'Approaching digital media design and UX/UI layouts in a clean and dynamic way. Use of Adobe Creative package for the creative mood.',
+          icon: 'fas fa-pencil-alt'
+        },
+
+        digitalMedia: {
+          title: 'Digital Media',
+          desc: 'Understand that a positive and effective communication involves different types of media including 3D/animations, infographics and video.',
+          icon: 'fas fa-cubes'
+        },
+
+        futureProof : {
+          title: 'Be Future-Proof',
+          desc: 'Continuous learning is not an option. Try-Learn-Improve-Repeat. Involvement in Blockchain Dev, Web Audio and Generative Art are steps toward the future.',
+          icon: 'far fa-lightbulb'
+        },
+
+        projectsData: []
+
+
+
+      }
+    },
+
+    created: function() {
+      this.fetchProjectsData();
+    },
+
+    methods: {
+
+      fetchProjectsData() {
+        url = './includes/index.php';
+
+        fetch(url) // pass in the one or many query
+          .then(res => res.json())
+          .then(data => {
+            console.log(data);
+            this.autodata = data;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+
     }
 
   });
@@ -88,7 +142,9 @@
     const wait = txtElement.getAttribute("data-wait");
 
     // initialize type writer
-    new TypeWriter(txtElement, words, wait);
+    setTimeout(() => {
+      new TypeWriter(txtElement, words, wait);
+    }, 4800);
   }
     // -------- end PRESENTATION TYPEWRITER EFFECT ----- //
 
