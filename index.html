@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Portfolio</title>
+    <title>Camillo's Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inconsolata%7CMontserrat:300,400,500,700"
       rel="stylesheet"
@@ -105,10 +105,181 @@
 
     </section>
     <!-- SKILLS end -->
+
+    <!-- WORKS and EXPLORATIONS -->
+    <section id="works">
+      <h2>Works<span>.</span></h2>
+
+      <div class="gallery">
+        
+        <!-- WORKS. -->
+        <div id="myWorks" data-state="0">
+          <div class="big-images" v-if="projectsData.length">
+            <div class="ui-big-image" data-key="0">
+              <img :src="'images/gallery/'+projectsData[0].project_img" alt="Dental Strategy project" />
+            </div>
+            <div class="ui-big-image" data-key="1">
+              <img :src="'images/gallery/'+projectsData[1].project_img" alt="Team Canada project" />
+            </div>
+            <div class="ui-big-image" data-key="2">
+              <img :src="'images/gallery/'+projectsData[2].project_img" alt="Hex-to-Text project" />
+            </div>
+            <div class="ui-big-image" data-key="3">
+              <img :src="'images/gallery/'+projectsData[3].project_img" alt="Moog Sub37 Club project" />
+            </div>
+            <div class="ui-big-image" data-key="4">
+              <img :src="'images/gallery/'+projectsData[4].project_img" alt="Blockchain101 project" />
+            </div>
+          </div>
+          <div class="thumbs" v-if="projectsData.length">
+            <div class="ui-thumbnail" tabindex="-1" data-key="0" @click="moveImg(0)">
+              <img :src="'images/thumbs/'+projectsData[0].project_thumb_img" alt="Dental Strategy project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+            <div class="ui-thumbnail" tabindex="-1" data-key="1" @click="moveImg(1)">
+              <img :src="'images/thumbs/'+projectsData[1].project_thumb_img" alt="Team Canada project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+            <div class="ui-thumbnail" tabindex="-1" data-key="2" @click="moveImg(2)">
+              <img :src="'images/thumbs/'+projectsData[2].project_thumb_img" alt="Hex-to-Text project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+            <div class="ui-thumbnail" tabindex="-1" data-key="3" @click="moveImg(3)">
+              <img :src="'images/thumbs/'+projectsData[3].project_thumb_img" alt="Moog Sub37 Club project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+            <div class="ui-thumbnail" tabindex="-1" data-key="4" @click="moveImg(4)">
+              <img :src="'images/thumbs/'+projectsData[4].project_thumb_img" alt="Blockchain101 project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+          </div>
+          <div class="ui-content">
+        
+            <nav class="ui-nav">
+              <button @click="moveImg('PREV')" id="prev" tabindex="-1" title="Previous">&lt;</button>
+              <button @click="moveImg('NEXT')" id="next" tabindex="-1" title="Next">&gt;</button>
+            </nav>
+        
+            <div class="ui-articles" v-if="projectsData.length">
+              <article class="ui-article" data-key="0">
+                <h2 class="ui-title">{{ projectsData[0].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[0].project_description }}</p>
+                <a class="visitSite" :href="projectsData[0].project_url" target="_blank">Visit Project</a> 
+              </article>
+              <article class="ui-article" data-key="1">
+                <h2 class="ui-title">{{ projectsData[1].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[1].project_description }}</p>
+                <a class="visitSite" :href="projectsData[1].project_url" target="_blank">Visit Website</a>
+              </article>
+              <article class="ui-article" data-key="2">
+                <h2 class="ui-title">{{ projectsData[2].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[2].project_description }}</p>
+                <a class="visitSite" :href="projectsData[2].project_url" target="_blank">Try it!</a>
+              </article>
+              <article class="ui-article" data-key="3">
+                <h2 class="ui-title">{{ projectsData[3].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[3].project_description }}</p>
+                <a class="visitSite" :href="projectsData[3].project_url" target="_blank">Visit Website</a>
+              </article>
+              <article class="ui-article" data-key="4">
+                <h2 class="ui-title">{{ projectsData[4].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[4].project_description }}</p>
+                <a class="visitSite" :href="projectsData[4].project_url" target="_blank">Learn about Blockchain</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Explorations. -->
+    <section id="explorations">
+      <h2>Explorations<span>.</span></h2>
+    
+      <div class="gallery">
+  
+        <div id="myExplorations" data-state="0">
+          <div class="big-images" v-if="projectsData.length">
+            <div class="ui-big-image" data-key="0">
+              <img :src="'images/gallery/'+projectsData[5].project_img" alt="Blockchain project" />
+            </div>
+            <div class="ui-big-image" data-key="1">
+              <img :src="'images/gallery/'+projectsData[6].project_img" alt="Aqua project" />
+            </div>
+            <div class="ui-big-image" data-key="2">
+              <img :src="'images/gallery/'+projectsData[7].project_img" alt="Cosmetics project" />
+            </div>
+            <div class="ui-big-image" data-key="3">
+              <img :src="'images/gallery/'+projectsData[8].project_img" alt="Titan project" />
+            </div>
+            <div class="ui-big-image" data-key="4">
+              <img :src="'images/gallery/'+projectsData[9].project_img" alt="Roku FBK project" />
+            </div>
+          </div>
+          <div class="thumbs" v-if="projectsData.length">
+            <div class="ui-thumbnail" tabindex="-1" data-key="0" @click="moveImg(0)">
+              <img :src="'images/thumbs/'+projectsData[5].project_thumb_img" alt="Blockchain project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+            <div class="ui-thumbnail" tabindex="-1" data-key="1" @click="moveImg(1)">
+              <img :src="'images/thumbs/'+projectsData[6].project_thumb_img" alt="Aqua project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+            <div class="ui-thumbnail" tabindex="-1" data-key="2" @click="moveImg(2)">
+              <img :src="'images/thumbs/'+projectsData[7].project_thumb_img" alt="Cosmetics project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+            <div class="ui-thumbnail" tabindex="-1" data-key="3" @click="moveImg(3)">
+              <img :src="'images/thumbs/'+projectsData[8].project_thumb_img" alt="Titan project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+            <div class="ui-thumbnail" tabindex="-1" data-key="4" @click="moveImg(4)">
+              <img :src="'images/thumbs/'+projectsData[9].project_thumb_img" alt="Roku FBK project" />
+              <div class="thumb-selected" data-flip-key="thumb-sel"></div>
+            </div>
+          </div>
+          <div class="ui-content">
+    
+            <nav class="ui-nav">
+              <button @click="moveImg('PREV')" id="prev" tabindex="-1" title="Previous">&lt;</button>
+              <button @click="moveImg('NEXT')" id="next" tabindex="-1" title="Next">&gt;</button>
+            </nav>
+    
+            <div class="ui-articles" v-if="projectsData.length">
+              <article class="ui-article" data-key="0">
+                <h2 class="ui-title">{{ projectsData[5].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[5].project_description }}</p>
+                <a class="visitSite" :href="projectsData[5].project_url" target="_blank">See it on GitHub</a>
+              </article>
+              <article class="ui-article" data-key="1">
+                <h2 class="ui-title">{{ projectsData[6].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[6].project_description }}</p>
+              </article>
+              <article class="ui-article" data-key="2">
+                <h2 class="ui-title">{{ projectsData[7].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[7].project_description }}</p>
+              </article>
+              <article class="ui-article" data-key="3">
+                <h2 class="ui-title">{{ projectsData[8].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[8].project_description }}</p>
+              </article>
+              <article class="ui-article" data-key="4">
+                <h2 class="ui-title">{{ projectsData[9].project_name }}</h2>
+                <p class="ui-body">{{ projectsData[9].project_description }}</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WORKS and EXPLORATIONS end -->
+
+    
   
   
   </main>
 
+    <script src="js/flipping.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

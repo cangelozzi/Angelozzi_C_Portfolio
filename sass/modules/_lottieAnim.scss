@@ -1,10 +1,10 @@
 #bm {
   position: absolute;
-  top: 50%;
+  top: 5%;
 
     // tablet size media queries at 760px
     @media screen and (min-width: 760px) {
-      top: 14rem;
+      top: 4rem;
       left: 28rem;
       width: 80%;
     }
