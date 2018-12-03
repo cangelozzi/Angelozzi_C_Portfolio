@@ -1,0 +1,109 @@
+#formLogo {
+  width: 41%;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+  margin-bottom: 6rem;
+
+
+    // XS mobile media queries at 375px
+    @media screen and (min-width: 375px) {
+      left:  2rem;
+    }
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+       width: 24%;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      width: 16%;
+      left:  16rem;
+    }
+
+}
+
+#backToHome {
+  position: relative;
+  top: 0;
+  left: 14rem;
+  font-size: 4rem;
+  color: $almostBlack;
+  cursor: pointer;
+  text-decoration: none;
+
+      // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+       left: 51rem;
+    }
+
+       // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      left:  100rem;
+      font-size: 6rem;
+      top: 1rem;
+    }
+}
+
+.form-control {
+  border: 0;
+  outline: 0;
+  background: $almostWhite;
+  border-bottom: 1px solid $almostBlack;
+
+        // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+       margin-bottom: 6rem
+    }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+form {
+  margin-top: 4rem;
+
+  // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+       margin-top: 6rem
+    }
+}
+
+label { 
+  font-size: 1.4rem; 
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+       font-size: 2rem; 
+    }
+
+}
+
+.btn-primary {
+  border: none;
+  background-color: $almostBlack;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  letter-spacing: .6rem;
+}
+
+#inputName, #inputEmail, #inputMsg {
+  font-size: 2.4rem;
+  outline: none;
+}
+
+input:focus, input:active {
+    background-color: $almostWhite !important;
+    outline: none !important;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

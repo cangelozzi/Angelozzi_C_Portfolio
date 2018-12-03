@@ -51,6 +51,7 @@
     created: function() {
       this.moveImg(0);
       this.fetchProjectsData();
+
     },
 
     methods: {
@@ -188,6 +189,12 @@
 
   // initialize Dom, same as window onload
   document.addEventListener("DOMContentLoaded", init);
+
+  // initialize Sal.js - https://github.com/mciastek/sal
+  sal({
+    threshold: 0.2
+    // once: false,
+  });
 
   // reload page always on top
   window.onbeforeunload = function() {
