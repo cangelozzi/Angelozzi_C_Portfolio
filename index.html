@@ -14,6 +14,7 @@
       type="image/png"
       href="images/favicon/favicon_black.png"
     />
+    <link rel="stylesheet" href="css/sal.css">
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js" type="text/javascript"></script>
     <script
@@ -95,7 +96,7 @@
       <h2>Skills<span>.</span></h2>
 
         <div id="mySkills">
-          <div class="skill" v-for="skill in skills">
+          <div class="skill" v-for="skill in skills" data-sal-duration="800" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce">
             <i :class="skill.icon"></i>
           
             <h3 class="skill__title">{{ skill.title }}</h3>
@@ -274,11 +275,73 @@
     </section>
     <!-- WORKS and EXPLORATIONS end -->
 
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About<span>.</span></h2>
+
+      <div class="aboutMe">
+
+        <div class="infograph">
+          <img src="images/AbouteMe_Infographic.svg" alt="about me image">
+        </div>
+        
+        <div class="me">
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">I speak Italian, English, Spanish and Hungarian.</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="500" data-sal-easing="ease-out-bounce">I love running marathons, playing poker and foosball.</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="700" data-sal-easing="ease-out-bounce">Pink Floyd are my legends, and I have a Diploma in Sound Design.</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="900" data-sal-easing="ease-out-bounce">I love connecting Creativity and Technology.</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">Learning is my SuperPower</p>
+        </div>
+
+      </div>
     
+    </section>
+    <!-- ABOUT end -->
+
+      <!-- ABOUT -->
+      <section id="contact">
+        <h2>Contact<span>.</span></h2>
+
+        <div id="msg">
+          <a href="includes/contact.php">Send Me a Message</a>
+        </div>
+
+        <div id="cv">
+          <a href="data/Angelozzi_Camillo_resume.pdf" download>Download my Resume</a>
+        </div>
+
+        <div id="contact_social">
+          <p>...be curious on my social</p>
+          <ul id="socialContact">
+            <li><a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank" id="in"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/cangelozzi" target="_blank" id="gh"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.behance.net/cangelozzif2db" target="_blank" id="be"><i class="fab fa-behance"></i></a></li>
+            </ul>
+        </div>
+
+
+      </section>
+      <!-- ABOUT end -->
+
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        <h2 class="hidden">Website Footer</h2>
+      
+        <div class="footer__navigation">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item"><a href="#home">&copy; 2018 by Camillo Angelozzi</a></li>
+            <li class="footer__navigation-item"><a href="#home">-</a></li>
+            <li class="footer__navigation-item"><a href="#home">Let's Connect</a></li>
   
-  
+          </ul>
+        </div>
+      
+      </footer>
+    
   </main>
 
+    <script src="js/sal.js"></script>
     <script src="js/flipping.js"></script>
     <script src="js/app.js"></script>
   </body>
