@@ -1,8 +1,10 @@
 (() => {
   console.log("Welcome to my Portfolio, let's connect!");
 
+  // gallery flipping effect library
   const flipping = new Flipping();
 
+  // grab thumbnails and images node lists
   const elImages = Array.from(document.querySelectorAll("#myWorks .ui-big-image"));
   const elThumbnails = Array.from(document.querySelectorAll("#myWorks .ui-thumbnail"));
 
@@ -108,7 +110,7 @@
     }
   });
 
-  // LOTTIE bodymovin script
+  // ----------- LOTTIE bodymovin script ------------- //
   let animation = bodymovin.loadAnimation({
     container: document.getElementById("bm"),
     render: "svg",
@@ -125,7 +127,7 @@
       this.words = words;
       this.txt = "";
       this.wordIndex = 0; // index for the words array, set to the first one
-      this.wait = parseInt(wait, 10); // parse time so that is always an integer
+      this.wait = parseInt(wait, 10); // parse time so that is always an integer at base10
       this.type(); // method with logic
       this.isDeleting = false; // state of the effect going back deleting word
     }
