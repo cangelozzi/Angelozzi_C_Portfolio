@@ -10,6 +10,8 @@ Where I am standing now, and where I will be in the future.
 
 Initial animation was created in Adobe Illustrator, moved to Adobe After Effects to apply animations, and finally exported to a data.json using Lottie AirBnb Bodymovin extension.
 
+![](images/readme_img/lottie.gif)
+
 The design orientation was to be minimalistic, direct and clear, highlighting the Developer and Design sides.  All the communication is oriented on the double elements of creativity and technology.
 
 ### SKILLS. section
