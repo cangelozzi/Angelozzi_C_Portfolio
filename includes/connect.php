@@ -1,4 +1,6 @@
 <?php
+
+// CREATE A CONNECTION using Class and method
 class Database
 {
     // Note: specify your own database credentials
@@ -16,6 +18,7 @@ class Database
       $this->conn->exec("set names utf8");
     } catch (PDOException $exception) {
       echo "Connection error: " . $exception->getMessage();
+      exit();
     }
     return $this->conn;
   }
