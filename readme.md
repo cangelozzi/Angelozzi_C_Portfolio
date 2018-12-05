@@ -1,9 +1,14 @@
 # Hi, this is my Portfolio 
 
-![image](images/readme_img/home.png)
+![image](images/readme_img/portfolioResponsiveShowcase.png)
 
 The concept idea was to create and to show an iconic graphic that captures the essence of my achievements.
 Where I am standing now, and where I will be in the future.
+
+### HERO. section
+![image](images/readme_img/home.png)
+
+Initial animation was created in Adobe Illustrator, moved to Adobe After Effects to apply animations, and finally exported to a data.json using Lottie AirBnb Bodymovin extension.
 
 The design orientation was to be minimalistic, direct and clear, highlighting the Developer and Design sides.  All the communication is oriented on the double elements of creativity and technology.
 
