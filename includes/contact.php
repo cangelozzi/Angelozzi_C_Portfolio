@@ -40,7 +40,7 @@ if (filter_has_var(INPUT_POST, 'submit')) {
 
       if (mail($toEmail, $subject, $body, $headers)) {
 				// Email Sent
-        $msg = 'Your email has been sent';
+        $msg = 'Your email has been sent! Press < icon to go back to my Portfolio, I will get back to you really fast.';
         $msgClass = 'alert-success';
       } else {
 				// Failed
