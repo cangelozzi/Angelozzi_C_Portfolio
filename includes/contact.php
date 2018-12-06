@@ -93,8 +93,13 @@ if (filter_has_var(INPUT_POST, 'submit')) {
 <body>
 
   <div class="formHeader">
-    <a href="/"><img id="formLogo" src="../images/logo/logo.svg" alt="Camillo Main Logo"></a>
-    <a id="backToHome" href="/"><</a>
+    <!-- FOR LOCAL DEV -->
+    <a href="/Angelozzi_C_Portfolio/"><img id="formLogo" src="../images/logo/logo.svg" alt="Camillo Main Logo"></a>
+    <a id="backToHome" href="/Angelozzi_C_Portfolio/"><</a>
+
+    <!-- WHEN IN HOST SERVICE -->
+    <!-- <a href="/"><img id="formLogo" src="../images/logo/logo.svg" alt="Camillo Main Logo"></a>
+    <a id="backToHome" href="/"><</a> -->
   </div>
 
     <div class="container">
@@ -107,7 +112,7 @@ if (filter_has_var(INPUT_POST, 'submit')) {
 
           <?php foreach ($fields as $field_name => $field_config) : ?> 
             <label for="<?php echo $field_name; ?>"><?php echo $field_config['label']; ?></label>
-            <input class="form-control" type="<?php echo $field_config['type']; ?>" id="<?php echo $field_config['id']; ?>" name="<?php echo $field_name; ?>" value="<?php echo isset($_POST[$field_name]) ? '$' . $field_name : ''; ?>">
+            <input class="form-control" type="<?php echo $field_config['type']; ?>" id="<?php echo $field_config['id']; ?>" name="<?php echo $field_name; ?>" >
           <?php endforeach; ?>
 
         </div> 
