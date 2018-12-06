@@ -7,6 +7,25 @@ set_error_handler("var_dump");
 $msg = '';
 $msgClass = '';
 
+// Input Form fields
+$fields = array(
+  'name' => array(
+    'type' => 'text',
+    'label' => 'Name',
+    'id' => 'inputName'
+  ),
+  'email' => array(
+    'type' => 'email',
+    'label' => 'Email',
+    'id' => 'inputEmail'
+  ),
+  'message' => array(
+    'type' => 'textarea',
+    'label' => 'Message',
+    'id' => 'inputMsg'
+  )
+);
+
 // Check For Submit
 if (filter_has_var(INPUT_POST, 'submit')) {
 	// Get Form Data
@@ -74,9 +93,8 @@ if (filter_has_var(INPUT_POST, 'submit')) {
 <body>
 
   <div class="formHeader">
-    <a href="/Angelozzi_C_Portfolio/"><img id="formLogo" src="../images/logo/logo.svg" alt="Camillo Main Logo"></a>
-    <!-- <p id="backArrow"><</p> -->
-    <a id="backToHome" href="/Angelozzi_C_Portfolio/"><</a>
+    <a href="/"><img id="formLogo" src="../images/logo/logo.svg" alt="Camillo Main Logo"></a>
+    <a id="backToHome" href="/"><</a>
   </div>
 
     <div class="container">
@@ -84,18 +102,16 @@ if (filter_has_var(INPUT_POST, 'submit')) {
     		<div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
     	<?php endif; ?>
       <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
 	      <div class="form-group">
-		      <label>Name</label>
-		      <input id="inputName" type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
-	      </div>
-	      <div class="form-group">
-	      	<label>Email</label>
-	      	<input id="inputEmail" type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
-	      </div>
-	      <div class="form-group">
-	      	<label>Message</label>
-	      	<textarea id="inputMsg" name="message" class="form-control"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
-	      </div>
+
+          <?php foreach ($fields as $field_name => $field_config) : ?> 
+            <label for="<?php echo $field_name; ?>"><?php echo $field_config['label']; ?></label>
+            <input class="form-control" type="<?php echo $field_config['type']; ?>" id="<?php echo $field_config['id']; ?>" name="<?php echo $field_name; ?>" value="<?php echo isset($_POST[$field_name]) ? '$' . $field_name : ''; ?>">
+          <?php endforeach; ?>
+
+        </div> 
+        
 	      <br>
 	      <button type="submit" name="submit" class="btn btn-primary">Send</button>
       </form>
