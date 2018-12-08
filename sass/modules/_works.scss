@@ -211,6 +211,11 @@ img {
     @media screen and (min-width: 760px) {
       width: 100%;
     }
+    
+    // Tablet size media queries at 960px LANDSCAPE
+    @media screen and (min-width: 960px) and (orientation: landscape) {
+      height: 106%;
+      }
 
     // desktop size media queries at 1200px
     @media screen and (min-width: 1200px) {

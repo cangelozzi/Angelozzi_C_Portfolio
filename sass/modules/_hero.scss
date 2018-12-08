@@ -63,6 +63,11 @@
       margin-top: 32rem;
     }
 
+    // XS mobile size media queries at 375px LANDSCAPE
+    @media screen and (min-width: 375px) and (orientation: landscape) {
+      margin-top: 38rem;
+    }
+
     // tablet size media queries at 760px
     @media screen and (min-width: 760px) {
       margin-top: 24rem;
