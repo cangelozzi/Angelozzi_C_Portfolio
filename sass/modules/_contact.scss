@@ -85,10 +85,22 @@
     margin-left: 8rem;
   }
 
+    // XS mobile LANDSCAPE
+  @media screen and (min-width: 480px) and (orientation: landscape) {
+    margin-top: 6rem;
+    margin-left: 24rem;
+  }
+
   // tablet size media queries at 760px
   @media screen and (min-width: 760px) {
     margin-top: 0;
     margin-left: 29rem;
+  }
+
+  // Tablet size media queries at 960px LANDSCAPE
+  @media screen and (min-width: 960px) and (orientation:    landscape) {
+    margin-top: 4rem;
+    margin-left: 42rem;
   }
 
     // desktop size media queries at 1200px

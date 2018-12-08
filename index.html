@@ -68,10 +68,11 @@
     <!-- HEADER end -->
 
     <!-- logo image -->
-    <a href="#"><img id="mainLogo" src="images/logo/logo.svg" alt="Camillo Main Logo"></a>
+    <a href=""><img id="mainLogo" src="images/logo/logo.svg" alt="Camillo Main Logo"></a>
 
     <!-- HERO -->
-    <section id="hero"> 
+    <section id="hero">
+      <h2 class="hidden">HERO introduction section</h2> 
 
       <!-- tagline -->
       <div id="hero__tagline">
@@ -99,6 +100,7 @@
           <div class="skill" v-for="skill in skills" data-sal-duration="800" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce">
             <i :class="skill.icon"></i>
           
+            <h3 class="hidden">Skills Title and Description</h3>
             <h3 class="skill__title">{{ skill.title }}</h3>
             <p class="skill__desc">{{ skill.desc }}</p>
           </div>
@@ -157,6 +159,7 @@
           <div class="ui-content">
         
             <nav class="ui-nav">
+              <h3 class="hidden">Works Gallery Navigation</h3>
               <button @click="moveImg('PREV')" id="prev" tabindex="-1" title="Previous">&lt;</button>
               <button @click="moveImg('NEXT')" id="next" tabindex="-1" title="Next">&gt;</button>
             </nav>
@@ -242,6 +245,7 @@
           <div class="ui-content">
     
             <nav class="ui-nav">
+              <h3 class="hidden">Works Gallery Navigation</h3>
               <button @click="moveImg('PREV')" id="prev" tabindex="-1" title="Previous">&lt;</button>
               <button @click="moveImg('NEXT')" id="next" tabindex="-1" title="Next">&gt;</button>
             </nav>

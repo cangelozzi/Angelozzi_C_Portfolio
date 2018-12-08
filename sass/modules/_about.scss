@@ -78,10 +78,20 @@
       right: 2rem;
       top: 0rem;
 
+        // XS mobile LANDSCAPE
+      @media screen and (min-width: 480px) and (orientation: landscape) {
+        top: -4.8rem;
+      }
+
       // tablet size media queries at 760px
       @media screen and (min-width: 760px) {
         right: 8rem;
         top: 2rem;
+      }
+
+      // Tablet size media queries at 960px LANDSCAPE
+      @media screen and (min-width: 960px) and (orientation:    landscape) {
+        top: -4rem;
       }
 
        // desktop size media queries at 1200px
@@ -116,10 +126,20 @@
       right: 2rem;
       top: 1rem;
 
+      // XS mobile LANDSCAPE
+      @media screen and (min-width: 480px) and (orientation: landscape) {
+        top: 6rem;
+      }
+
       // tablet size media queries at 760px
       @media screen and (min-width: 760px) {
         right: 10rem;
         top: 9rem;
+      }
+
+      // Tablet size media queries at 960px LANDSCAPE
+      @media screen and (min-width: 960px) and (orientation:    landscape) {
+        top: 14rem;
       }
 
       // desktop size media queries at 1200px
@@ -132,11 +152,21 @@
 
     &:nth-child(4) {
 
+      // XS mobile LANDSCAPE
+      @media screen and (min-width: 480px) and (orientation: landscape) {
+        top: 9rem;
+      }
+
       // tablet size media queries at 760px
       @media screen and (min-width: 760px) {
         position: relative;
         right: 6rem;
         top: 15rem;
+      }
+            
+      // Tablet size media queries at 960px LANDSCAPE
+      @media screen and (min-width: 960px) and (orientation:    landscape) {
+        top: 24rem;
       }
 
         // desktop size media queries at 1200px
@@ -153,11 +183,21 @@
       right: 3rem;
       top: 1.6rem;
 
+      // XS mobile LANDSCAPE
+      @media screen and (min-width: 480px) and (orientation: landscape) {
+        top: 15.6rem;
+      }
+
           // tablet size media queries at 760px
       @media screen and (min-width: 760px) {
         font-size: 3rem;
         top: 24rem;
         right: 9rem;
+      }
+
+      // Tablet size media queries at 960px LANDSCAPE
+      @media screen and (min-width: 960px) and (orientation:    landscape) {
+        top: 35rem;
       }
 
       // desktop size media queries at 1200px
