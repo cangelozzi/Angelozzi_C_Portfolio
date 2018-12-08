@@ -55,6 +55,6 @@ The contact section offers different way to communicate or connect with me.
 
 
 ### Future Improvements
-- Animations improvements
-- Further refactoring SASS structure
-- Backend and Database to be expanded
+- Animations improvements.
+- Further refactoring SASS structure.
+- Backend and Database to be expanded.
