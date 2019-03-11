@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Camillo's Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Inconsolata%7CMontserrat:300,400,500,700"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="images/favicon/favicon_black.png"
-    />
-    <link rel="stylesheet" href="css/sal.css">
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js" type="text/javascript"></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
-      integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Camillo's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata%7CMontserrat:300,400,500,700" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon/favicon_black.png" />
+  <link rel="stylesheet" href="css/sal.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.min.js" type="text/javascript"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
 
-    <!-- Lottie BodyMovin Animation -->
-    <div id="bm"></div>
-    
-    <!-- MAIN CONTENT and VUE instance-->
-    <main id="app">
+<body>
+
+  <!-- Lottie BodyMovin Animation -->
+  <div id="bm"></div>
+
+  <!-- MAIN CONTENT and VUE instance-->
+  <main id="app">
     <h1 class="hidden">Angelozzi Camillo Portfolio</h1>
 
     <!-- HEADER -->
@@ -72,7 +62,7 @@
 
     <!-- HERO -->
     <section id="hero">
-      <h2 class="hidden">HERO introduction section</h2> 
+      <h2 class="hidden">HERO introduction section</h2>
 
       <!-- tagline -->
       <div id="hero__tagline">
@@ -87,7 +77,7 @@
           <span class="txt-type" data-wait="2000" data-words='["I am a curious Developer", "I am a passionate Designer", "I am an Explorer", "I am a Creator"]'></span>
         </h1>
       </div>
-      
+
     </section>
     <!-- HERO end -->
 
@@ -96,15 +86,16 @@
     <section id="skills">
       <h2>Skills<span>.</span></h2>
 
-        <div id="mySkills">
-          <div class="skill" v-for="skill in skills" data-sal-duration="800" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce">
-            <i :class="skill.icon"></i>
-          
-            <h3 class="hidden">Skills Title and Description</h3>
-            <h3 class="skill__title">{{ skill.title }}</h3>
-            <p class="skill__desc">{{ skill.desc }}</p>
-          </div>
+      <div id="mySkills">
+        <div class="skill" v-for="skill in skills" data-sal-duration="800" data-sal="slide-up" data-sal-delay="100"
+          data-sal-easing="ease-out-bounce">
+          <i :class="skill.icon"></i>
+
+          <h3 class="hidden">Skills Title and Description</h3>
+          <h3 class="skill__title">{{ skill.title }}</h3>
+          <p class="skill__desc">{{ skill.desc }}</p>
         </div>
+      </div>
 
     </section>
     <!-- SKILLS end -->
@@ -114,7 +105,7 @@
       <h2>Works<span>.</span></h2>
 
       <div class="gallery">
-        
+
         <!-- WORKS. -->
         <div id="myWorks" data-state="0">
           <div class="big-images" v-if="projectsData.length">
@@ -157,18 +148,18 @@
             </div>
           </div>
           <div class="ui-content">
-        
+
             <nav class="ui-nav">
               <h3 class="hidden">Works Gallery Navigation</h3>
               <button @click="moveImg('PREV')" id="prev" tabindex="-1" title="Previous">&lt;</button>
               <button @click="moveImg('NEXT')" id="next" tabindex="-1" title="Next">&gt;</button>
             </nav>
-        
+
             <div class="ui-articles" v-if="projectsData.length">
               <article class="ui-article" data-key="0">
                 <h2 class="ui-title">{{ projectsData[0].project_name }}</h2>
                 <p class="ui-body">{{ projectsData[0].project_description }}</p>
-                <a class="visitSite" :href="projectsData[0].project_url" target="_blank">Visit Project</a> 
+                <a class="visitSite" :href="projectsData[0].project_url" target="_blank">Visit Project</a>
               </article>
               <article class="ui-article" data-key="1">
                 <h2 class="ui-title">{{ projectsData[1].project_name }}</h2>
@@ -196,12 +187,12 @@
       </div>
     </section>
 
-      <!-- Explorations. -->
+    <!-- Explorations. -->
     <section id="explorations">
       <h2>Explorations<span>.</span></h2>
-    
+
       <div class="gallery">
-  
+
         <div id="myExplorations" data-state="0">
           <div class="big-images" v-if="projectsData.length">
             <div class="ui-big-image" data-key="0">
@@ -243,13 +234,13 @@
             </div>
           </div>
           <div class="ui-content">
-    
+
             <nav class="ui-nav">
               <h3 class="hidden">Works Gallery Navigation</h3>
               <button @click="moveImg('PREV')" id="prev" tabindex="-1" title="Previous">&lt;</button>
               <button @click="moveImg('NEXT')" id="next" tabindex="-1" title="Next">&gt;</button>
             </nav>
-    
+
             <div class="ui-articles" v-if="projectsData.length">
               <article class="ui-article" data-key="0">
                 <h2 class="ui-title">{{ projectsData[5].project_name }}</h2>
@@ -288,65 +279,71 @@
         <div class="infograph">
           <img src="images/AbouteMe_Infographic.svg" alt="about me image">
         </div>
-        
+
         <div class="me">
-          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">I speak Italian, English, Spanish and Hungarian.</p>
-          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="500" data-sal-easing="ease-out-bounce">I love running marathons, playing poker and foosball.</p>
-          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="700" data-sal-easing="ease-out-bounce">Pink Floyd are my legends, and I have a Diploma in Sound Design.</p>
-          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="900" data-sal-easing="ease-out-bounce">I love connecting Creativity and Technology.</p>
-          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">Learning is my SuperPower</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">I
+            speak Italian, English, Spanish and Hungarian.</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="500" data-sal-easing="ease-out-bounce">I
+            run marathons, play poker, foosball and train kids soccer teams.</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="700" data-sal-easing="ease-out-bounce">Pink
+            Floyd are my legends, and I have a Diploma in Sound Design.</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="900" data-sal-easing="ease-out-bounce">I
+            love connecting Creativity and Technology.</p>
+          <p data-sal-duration="900" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">Learning
+            is my SuperPower</p>
         </div>
 
       </div>
-    
+
     </section>
     <!-- ABOUT end -->
 
-      <!-- ABOUT -->
-      <section id="contact">
-        <h2>Contact<span>.</span></h2>
+    <!-- ABOUT -->
+    <section id="contact">
+      <h2>Contact<span>.</span></h2>
 
-        <div id="msg">
-          <a href="includes/contact.php">Send Me a Message</a>
-        </div>
+      <div id="msg">
+        <a href="includes/contact.php">Send Me a Message</a>
+      </div>
 
-        <div id="cv">
-          <a href="data/Angelozzi_Camillo_resume.pdf" download>Download my Resume</a>
-        </div>
+      <div id="cv">
+        <a href="data/Angelozzi_Camillo_resume.pdf" download>Download my Resume</a>
+      </div>
 
-        <div id="contact_social">
-          <p>...be curious on my social</p>
-          <ul id="socialContact">
-            <li><a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank" id="inCon"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/cangelozzi" target="_blank" id="ghCon"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.behance.net/cangelozzif2db" target="_blank" id="beCon"><i class="fab fa-behance"></i></a></li>
-            </ul>
-        </div>
-
-
-      </section>
-      <!-- ABOUT end -->
+      <div id="contact_social">
+        <p>...be curious on my social</p>
+        <ul id="socialContact">
+          <li><a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank" id="inCon"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/cangelozzi" target="_blank" id="ghCon"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.behance.net/cangelozzif2db" target="_blank" id="beCon"><i class="fab fa-behance"></i></a></li>
+        </ul>
+      </div>
 
 
-      <!-- FOOTER -->
-      <footer id="footer">
-        <h2 class="hidden">Website Footer</h2>
-      
-        <div class="footer__navigation">
-          <ul class="footer__navigation-list">
-            <li class="footer__navigation-item"><a href="#home">&copy; 2018 by Camillo Angelozzi</a></li>
-            <li class="footer__navigation-item"><a href="#home">-</a></li>
-            <li class="footer__navigation-item"><a href="#home">Let's Connect</a></li>
-  
-          </ul>
-        </div>
-      
-      </footer>
-    
+    </section>
+    <!-- ABOUT end -->
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <h2 class="hidden">Website Footer</h2>
+
+      <div class="footer__navigation">
+        <ul class="footer__navigation-list">
+          <li class="footer__navigation-item"><a href="#home">&copy; 2019 by Camillo Angelozzi</a></li>
+          <li class="footer__navigation-item"><a href="#home">-</a></li>
+          <li class="footer__navigation-item"><a href="#home">Let's Connect</a></li>
+
+        </ul>
+      </div>
+
+    </footer>
+
   </main>
 
-    <script src="js/sal.js"></script>
-    <script src="js/flipping.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+  <script src="js/sal.js"></script>
+  <script src="js/flipping.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
