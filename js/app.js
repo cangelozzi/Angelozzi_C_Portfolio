@@ -18,39 +18,37 @@
       skills: {
         webDevelopment: {
           title: "Web Development",
-          desc:
-            "Experience in Frontend and Backend web development with HTML5 / CSS3, Javascript, NodeJS, VueJS, PHP/MySQL and Laravel.",
+          desc: "Experience in Frontend and Backend web development with HTML5 / CSS3, Javascript, NodeJS, VueJS, PHP/MySQL. Laravel and Drupal.",
           icon: "fas fa-terminal"
         },
 
         webDesign: {
           title: "Web Design",
-          desc:
-            "Approaching digital media design and UX/UI layouts in a clean and dynamic way. Use of Adobe Creative package for the creative mood.",
+          desc: "Approaching digital media design and UX/UI layouts in a clean and dynamic way. Use of Adobe Creative package for the creative mood.",
           icon: "fas fa-pencil-alt"
         },
 
         digitalMedia: {
           title: "Digital Media",
-          desc:
-            "Understand that a positive and effective communication involves different types of media including 3D/animations, infographics and video.",
+          desc: "A positive and effective communication involves different types of media. Problem Solving solutions with Design Thinking and Agile methods.",
           icon: "fas fa-cubes"
         },
 
         futureProof: {
           title: "Be Future-Proof",
-          desc:
-            "Continuous learning is not an option. Try-Learn-Improve-Repeat. Involvement in Blockchain Dev, Web Audio and Generative Art are steps toward the future.",
+          desc: "Continuous learning is not an option. Try-Learn-Improve-Repeat. Involvement in Blockchain Dev, Web Audio and Generative Art are steps toward the future.",
           icon: "far fa-lightbulb"
         }
       },
       projectsData: [],
-      state: { photo: 0 },
+      state: {
+        photo: 0
+      },
       elImages,
       elThumbnails
     },
 
-    created: function() {
+    created: function () {
       this.moveImg(0);
       this.fetchProjectsData();
 
@@ -66,7 +64,7 @@
             console.log(data);
             this.projectsData = data;
           })
-          .catch(function(error) {
+          .catch(function (error) {
             console.log(error);
           });
       },
@@ -199,7 +197,7 @@
   });
 
   // reload page always on top
-  window.onbeforeunload = function() {
+  window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
 })();

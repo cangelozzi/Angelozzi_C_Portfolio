@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2018 at 01:42 AM
+-- Generation Time: Mar 11, 2019 at 12:24 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.1.16
 
@@ -61,7 +61,7 @@ CREATE TABLE `tbl_projects` (
 --
 
 INSERT INTO `tbl_projects` (`project_id`, `project_name`, `project_description`, `project_url`, `project_thumb_img`, `project_img`) VALUES
-(1, 'Dental Strategy', 'Project based on Laravel and VueJS. \r\nThe final objective was to create a learning management Web App based on  \r\na MVC structure. Axios library was used \r\nto retrieve data from Laravel Web API.    ', 'http://phplaravel-196379-585910.cloudwaysapps.com/details/37', 'dentalStrategy_thumb.png', 'dentalStrategy.png'),
+(1, 'Dental Strategy', 'Project based on Laravel and VueJS. \r\nThe final objective was to create a learning management Web App based on  \r\na MVC structure. Axios library was used \r\nto retrieve data from Laravel Web API.    ', 'https://github.com/cangelozzi/Dental-Strategy', 'dentalStrategy_thumb.png', 'dentalStrategy.png'),
 (2, 'Team Canada 1972', 'Project objective was to create a complete CMS structure based on PHP/MySQL.  CRUD/Admin functionality was also included.', 'https://teamcanada1972.ca/', 'teamCanada_thumb.png', 'teamCanada.png'),
 (3, 'HEX-to-TEXT', 'Small widget to translate hexadecimal colours values into text. Javascript functions convert values from hexadecimal to binary, and then to ASCII. Foundation and Vue.js were also implemented. ', 'https://cangelozzi.github.io/hex-to-text/', 'hexToText_thumb.png', 'hexToText.png'),
 (4, 'Moog Sub37 - User Club', 'Full Stack capstone project; object was to create a Web Application using tools like Node.js, Express.js, MongoDB/Auth, Mocha/Chai testing, and SocketIO.', 'https://frozen-island-73891.herokuapp.com/', 'moogClub_thumb.png', 'moogClub.png'),
