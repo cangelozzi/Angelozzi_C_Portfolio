@@ -1,0 +1,266 @@
+#dentalStrategy {
+  height: 100%;
+  background-image: linear-gradient(to right top, $almostWhite 0%, $ds_main 100%);
+}
+
+#ds_menu {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding-top: 3rem;
+  position: relative;
+  z-index: 999;
+}
+
+#ds_menu ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+#ds_menu ul li {
+  display: inline-block;
+}
+
+#ds_menu ul li a {
+  padding: 18px;
+  text-transform: uppercase;
+  color: $ds_main;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
+}
+
+#ds_menu ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+#ds_logo {
+  width: 73%;
+  display: block;
+  margin: 3rem auto;
+  position: relative;
+  z-index: 999;
+
+  // tablet size media queries at 760px
+  @media screen and (min-width: 760px) {
+    width: 40%;
+  }
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    width: 20%;
+  }
+}
+
+#ds_intro {
+  width: 73%;
+  display: block;
+  margin: 3rem auto;
+  position: relative;
+  z-index: 999;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    width: 40%;
+  }
+}
+
+#aboutDs {
+
+  h1 {
+    font-size: 12rem;
+    margin-bottom: 4rem;
+    opacity: 0.2;
+    color: $ds_main;
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+      margin-left: 4rem;
+      font-size: 14rem;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 2rem;
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      font-size: 4rem;
+    }
+  }
+}
+
+#ds_problem,
+#ds_solution,
+#ds_outcome {
+  width: 80%;
+  margin: 3rem auto;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+
+  // tablet size media queries at 760px
+  @media screen and (min-width: 760px) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    font-size: 1.6rem;
+  }
+}
+
+#ds_methods_img {
+  width: 91%;
+  display: block;
+  margin: 3rem auto;
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    width: 61%;
+  }
+}
+
+#ds-video__content {
+  width: 32rem;
+
+  // tablet size media queries at 760px
+  @media screen and (min-width: 760px) {
+    width: 64rem;
+  }
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    width: 96rem;
+  }
+}
+
+#methodsDs {
+
+  h1 {
+    font-size: 12rem;
+    margin-bottom: 4rem;
+    opacity: 0.2;
+    color: $ds_main;
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+      margin-left: 4rem;
+      font-size: 14rem;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      margin-top: 4rem;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 2rem;
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    width: 80%;
+    margin: 3rem auto;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+#ds_tools {
+
+  h1 {
+    font-size: 12rem;
+    margin-bottom: 4rem;
+    opacity: 0.2;
+    color: $ds_main;
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+      margin-left: 4rem;
+      font-size: 14rem;
+    }
+  }
+
+  p {
+    width: 80%;
+    margin: 3rem auto;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+
+    // tablet size media queries at 760px
+    @media screen and (min-width: 760px) {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      font-size: 1.6rem;
+      width: 69%;
+    }
+  }
+
+}
+
+#ds_tools_final_img {
+  position: relative;
+  top: -1rem;
+
+  // tablet size media queries at 760px
+  @media screen and (min-width: 760px) {
+    width: 30rem;
+    margin-bottom: 3rem;
+    top: 1rem;
+    left: 23.4rem;
+  }
+
+  // desktop size media queries at 1200px
+  @media screen and (min-width: 1200px) {
+    width: 36rem;
+    left: 56rem;
+  }
+}
+
+// desktop size media queries at 1200px
+@media screen and (min-width: 1200px) {
+  #ds_stepone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// desktop size media queries at 1200px
+@media screen and (min-width: 1200px) {
+  #ds_method_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
