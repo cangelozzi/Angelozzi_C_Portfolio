@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2019 at 12:24 AM
+-- Generation Time: Mar 24, 2019 at 04:16 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.1.16
 
@@ -61,16 +61,16 @@ CREATE TABLE `tbl_projects` (
 --
 
 INSERT INTO `tbl_projects` (`project_id`, `project_name`, `project_description`, `project_url`, `project_thumb_img`, `project_img`) VALUES
-(1, 'Dental Strategy', 'Project based on Laravel and VueJS. \r\nThe final objective was to create a learning management Web App based on  \r\na MVC structure. Axios library was used \r\nto retrieve data from Laravel Web API.    ', 'https://github.com/cangelozzi/Dental-Strategy', 'dentalStrategy_thumb.png', 'dentalStrategy.png'),
-(2, 'Team Canada 1972', 'Project objective was to create a complete CMS structure based on PHP/MySQL.  CRUD/Admin functionality was also included.', 'https://teamcanada1972.ca/', 'teamCanada_thumb.png', 'teamCanada.png'),
-(3, 'HEX-to-TEXT', 'Small widget to translate hexadecimal colours values into text. Javascript functions convert values from hexadecimal to binary, and then to ASCII. Foundation and Vue.js were also implemented. ', 'https://cangelozzi.github.io/hex-to-text/', 'hexToText_thumb.png', 'hexToText.png'),
-(4, 'Moog Sub37 - User Club', 'Full Stack capstone project; object was to create a Web Application using tools like Node.js, Express.js, MongoDB/Auth, Mocha/Chai testing, and SocketIO.', 'https://frozen-island-73891.herokuapp.com/', 'moogClub_thumb.png', 'moogClub.png'),
+(1, 'Dental Strategy', 'Project based on Laravel and VueJS. \r\nThe final objective was to create a learning management Web App based on  \r\na MVC structure. Axios library was used \r\nto retrieve data from Laravel Web API.    ', 'dentalstrategy.html', 'dentalStrategy_thumb.png', 'dentalStrategy.png'),
+(2, 'Team Canada 1972', 'Client based project with objective to create a complete CMS structure based on PHP/MySQL.  CRUD/Admin functionality was also included.', 'https://teamcanada1972.ca/', 'teamCanada_thumb.png', 'teamCanada.png'),
+(3, 'J/E Bearing ', 'Client based group project based on Laravel framework.  Phase objective: create a complete Online Industrial Training Application.  Backend responsibility handling Modules, Controllers and Blade Views.', 'jebearing.html', 'jebearing_thumb.jpg', 'jebearing.jpg'),
+(4, 'Moog Sub37 - User Club', 'Full Stack capstone project; object was to create a Web Application using tools like Node.js, Express.js, MongoDB/Auth, Mocha/Chai testing, and SocketIO. ', 'https://frozen-island-73891.herokuapp.com/', 'moogClub_thumb.png', 'moogClub.png'),
 (5, 'Blockchain101', 'Javascript infographic, using tools like Lottie \r\nAirBnb/Bodymovin, Adobe After Effects \r\nand Chart.js library.  Objective to create a UX/UI appealing interaction for data visualization.  ', 'https://cangelozzi.github.io/Angelozzi_Camillo_InformationGraphicApp/', 'blockchain101_thumb.png', 'blockchain101.png'),
 (6, 'Blockchain Notary Service', 'Javascript based example of \r\ndecentralised Blockchain API. \r\nPracticing the main Blockchain \r\nstructure concepts, and how they \r\ncan be expressed in JS/Classes, Node.js/Express.js, and LevelDB.', 'https://github.com/cangelozzi/Blockchain_Developer_projects', 'blockchain_thumb.png', 'blockchain.png'),
-(7, 'Aqua - Branding', 'Branding project, for creating an\r\ninfuser bottle, and highlight the \r\nnew brand aspects.  Tools used: \r\nAdobe XD, Illustrator and Photoshop.    ', '', 'aqua_thumb.png', 'aqua.png'),
-(8, 'Cosmetics', 'Create a 3D Modelling objects,\r\nand build a composition.  Tools \r\nused: Cinema4D, Adobe Photoshop.', '', 'cosmetics_thumb.png', 'cosmetics.png'),
-(9, 'Planet Titan', 'Practicing Adobe Illustrator\r\nadvanced gradient concept.  \r\nGoal to create a glass planet with\r\nplenty of colorful gradients.', '', 'titan_thumb.png', 'titan.png'),
-(10, 'Roku FBK', 'Rethinking of Roku Streaming App\r\nwith reference to Kids content\r\nUI/UX.  ', '', 'rokuFBK_thumb.png', 'rokuFBK.png');
+(7, 'Aqua - Branding', 'Branding project, for creating an\r\ninfuser bottle, and highlight the \r\nnew brand aspects.  Tools used: \r\nAdobe XD, Illustrator and Photoshop.    ', 'data/aqua_style_guide.pdf', 'aqua_thumb.png', 'aqua.png'),
+(8, 'Portfolio Reel', 'Highlight on projects related to 3D modelling and video/image manipulation, using tools like Cinema4D, Adobe Illustrator and Adobe After Effects.', 'https://www.youtube.com/watch?v=yMAi_JYL6JM', 'reel_thumb.png', 'reel.jpg'),
+(9, 'Codecraft', 'Coding platform specific for kids. Opportunity to mix fun and learning.App based on Node and Express, and Handlebars as template / view engine. Heroku service used to deploy the app. The idea is going to be expanded into Phase two.', 'https://angelozzi-c-herokuproductpromo.herokuapp.com/', 'codecraft_thumb.png', 'codecraft.png'),
+(10, 'HEX-to-TEXT', 'Small widget to translate hexadecimal colours values into text. Javascript functions convert values from hexadecimal to binary, and then to ASCII. Foundation and Vue.js were also implemented.  ', 'https://cangelozzi.github.io/hex-to-text/', 'hexToText_thumb.png', 'hexToText.png');
 
 -- --------------------------------------------------------
 
